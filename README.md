@@ -1,1 +1,1 @@
-# EjercicioJavaScript
+# EjerciciosJavaScript
