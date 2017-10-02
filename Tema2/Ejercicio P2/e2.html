@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	function cambiaImagen() {
+		var imagen = document.getElementById("imagen");
+		if (imagen.src.match("a.jpg")) {
+	    	    imagen.src = "b.jpg";
+		} else {
+	    	    imagen.src = "a.jpg";
+		}
+	}
+
+
+
+		
+	</script>
+</head>
+<body>
+<img src="a.jpg" id="imagen" onclick="cambiaImagen();" width="500px" height="500px" />
+
+
+</body>
+</html>
