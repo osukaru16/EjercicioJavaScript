@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ej9 Tema2 Oscar</title>
+		<script type="text/javascript">
+
+		window.onload = function(){
+			for (var i = 2; i <= 12; i++) {
+				document.getElementById("carasDado").innerHTML += "<option value='"+i+"'>"+i+"</option>";
+			}
+		} 
+
+
+		function lanzarDado(){
+			
+			var numerCaras = document.getElementById("carasDado").value;
+
+			document.getElementById("respuesta").innerHTML = "El numero es: "+ Math.floor((Math.random() * numerCaras) + 1);
+			
+		
+
+			
+		}
+
+			
+		</script>
+		
+		
+	</head>
+	<body>
+		<form>
+			Introduex un nombre decimal<br/>
+			<select name="caras" id="carasDado"></select>
+			<input type="button" value="Tirar dado" onclick="lanzarDado();">
+
+
+		</form>
+
+		<p id="respuesta"></p>
+
+
+	</body>
+</html>
