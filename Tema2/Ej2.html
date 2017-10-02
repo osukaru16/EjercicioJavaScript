@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ej2 Tema2 Oscar</title>
+		<script type="text/javascript">
+		function comprueba(){
+			var numero = document.getElementById("numero").value;
+			if (numero.length == 0){
+				document.getElementById("respuesta").innerHTML = "Incorrecto";
+			}
+			else if ((numero >= -1)&&(numero <= 1)){
+				document.getElementById("respuesta").innerHTML = "Correcto";
+			}
+			else{
+				document.getElementById("respuesta").innerHTML = "Incorrecto";
+			}
+			
+		}
+			
+		</script>
+		
+	</head>
+	<body>
+		<form>
+			Introduex un nombre en l'interbal(-1,1) <br/>
+			<input type="text" name="numero" id="numero"  />
+			<input type="button" value="Submit" onclick="comprueba();">
+
+
+		</form>
+
+		<p id="respuesta"></p>
+
+
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ej7 Tema2 Oscar</title>
+		<script type="text/javascript">
+		function convertir(){
+			var email = document.getElementById("numero").value;
+			var arrobaPosicion = email.indexOf("@");
+			var usuario = email.slice(0, arrobaPosicion);
+			var dominio = email.slice(arrobaPosicion+1, email.length);
+			//var preDominio = usuario+"@";
+			//var dominio = email.split(usuario+"@");
+
+			/*
+			alert(arrobaPosicion);
+			alert(usuario);
+			alert(dominio);
+			*/
+
+			//alert(preDominio);
+
+			document.getElementById("respuesta").innerHTML = "Usuario: "+usuario+"<br/> Dominio: "+dominio;
+
+			
+		}
+			
+		</script>
+		
+	</head>
+	<body>
+		<form>
+			Introduex el email<br/>
+			<input type="text" name="numero" id="numero"  />
+			<input type="button" value="Submit" onclick="convertir();">
+
+
+		</form>
+
+		<p id="respuesta"></p>
+
+
+	</body>
+</html>

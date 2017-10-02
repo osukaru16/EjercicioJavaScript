@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ej4 Tema2 Oscar</title>
+		<script type="text/javascript">
+		function calcula(){
+			var numero = document.getElementById("numero").value;
+			var area = Math.PI*(Math.pow(numero, 2));
+			var longitud = 2*Math.PI*numero;
+
+			document.getElementById("respuesta").innerHTML ="L'àrea és "+area+" i la longitud "+longitud;
+			document.getElementById("lienzo").innerHTML ="<svg height='200' width='200'><circle cx='50' cy='50' r="+numero+" stroke='black' stroke-width='1' fill='red'></circle> </svg>";
+			
+			
+		}
+			
+		</script>
+		
+	</head>
+	<body>
+		<form>
+			Introduex el radi del cercle <br/>
+			<input type="text" name="numero" id="numero"  />
+			<input type="button" value="Submit" onclick="calcula();">
+
+
+		</form>
+
+		<p id="respuesta"></p>
+
+		<div id="lienzo"></div>
+		
+
+
+	</body>
+</html>

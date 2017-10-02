@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ej5 Tema2 Oscar</title>
+		<script type="text/javascript">
+			function pintaRojo(){
+				document.getElementById("respuesta2").style.color = "red";
+			}
+
+			function pintaAzul(){
+				document.getElementById("respuesta2").style.color = "blue";
+			}
+		
+			
+		</script>
+
+
+		<style type="text/css">
+
+			#respuesta1{color: red; width: 250px;}
+			#respuesta1:hover{color: blue;}
+
+		</style>
+
+		
+	</head>
+	<body>
+
+		<p id="respuesta1"> Texto que cambia solo usando CSS</p>
+
+		<p id="respuesta2" onmouseout="pintaRojo();"  onmouseover="pintaAzul();"> Texto que cambia solo usando JavaScript</p>
+
+
+	</body>
+</html>

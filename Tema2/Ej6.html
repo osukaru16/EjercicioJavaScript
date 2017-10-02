@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ej6 Tema2 Oscar</title>
+		<script type="text/javascript">
+		function convertir(){
+			var email = document.getElementById("numero").value;
+			var usuario = email.split("@",1);
+			//var preDominio = usuario+"@";
+			var dominio = email.split(usuario+"@");
+
+			//alert(preDominio);
+
+			document.getElementById("respuesta").innerHTML = "Usuario: "+usuario+"<br/> Dominio: "+dominio;
+
+			
+		}
+			
+		</script>
+		
+	</head>
+	<body>
+		<form>
+			Introduex el email<br/>
+			<input type="text" name="numero" id="numero"  />
+			<input type="button" value="Submit" onclick="convertir();">
+
+
+		</form>
+
+		<p id="respuesta"></p>
+
+
+	</body>
+</html>

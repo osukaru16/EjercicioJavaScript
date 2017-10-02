@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ej3 Tema2 Oscar</title>
+		<script type="text/javascript">
+		function calcula(){
+			var numeroA = document.getElementById("numeroA").value;
+			var numeroB = document.getElementById("numeroB").value;
+			var x = -1*(numeroB / numeroA);
+			//alert(x);
+
+			if ((isNaN(x))||(numeroA.length == 0)||(numeroB.length == 0)) {
+				document.getElementById("respuesta").innerHTML = "Error";
+			}else{
+				document.getElementById("respuesta").innerHTML = x;
+			}
+
+		}
+			
+		</script>
+		
+	</head>
+	<body>
+		<form>
+			Introdueix els coeficients de l'equació <br/>
+			<input type="text" name="numeroA" id="numeroA" />X+
+			<input type="text" name="numeroB" id="numeroB" />=0
+			<input type="button" value="Submit" onclick="calcula();">
+
+
+		</form>
+
+		<p id="respuesta"></p>
+
+
+	</body>
+</html>
