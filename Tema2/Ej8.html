@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ej8 Tema2 Oscar</title>
+		<script type="text/javascript">
+		function convertir(){
+
+			var text = document.getElementById("text").innerHTML;
+
+
+
+			/*
+			var email = document.getElementById("numero").value;
+			var arrobaPosicion = email.indexOf("@");
+			var usuario = email.slice(0, arrobaPosicion);
+			var dominio = email.slice(arrobaPosicion+1, email.length);
+			*/
+			//var preDominio = usuario+"@";
+			//var dominio = email.split(usuario+"@");
+
+			/*
+			alert(arrobaPosicion);
+			alert(usuario);
+			alert(dominio);
+			*/
+
+			//alert(preDominio);
+
+			//document.getElementById("respuesta").innerHTML = "Usuario: "+usuario+"<br/> Dominio: "+dominio;
+
+			
+			var textoMitadA = text.substring(0, Math.round(text.length / 2));
+			var textoMitadB = text.substring(Math.round(text.length / 2), text.length);
+
+
+			document.getElementById("respuesta").innerHTML = "<p>"+textoMitadA + "</p> <p>" + textoMitadB+"</p>";
+			
+
+			//alert(text);
+
+
+
+			
+		}
+			
+		</script>
+		
+	</head>
+	<body>
+		<form>
+		<p id="text">The reference contains descriptions and examples of all string properties and methods.</p>
+			<!-- Introduex el email<br/> 
+			<input type="text" name="numero" id="numero"  />-->
+			<input type="button" value="Submit" onclick="convertir();">
+
+
+		</form>
+
+		<div id="respuesta"></div>
+
+
+	</body>
+</html>
