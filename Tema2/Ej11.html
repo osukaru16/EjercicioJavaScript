@@ -7,8 +7,14 @@
 		window.onload = function(){
 			var fecha = new Date();
 
+			var dia = fecha.getDate();
+			var mes = fecha.getMonth();
+			var any = fecha.getFullYear();
+			var hora = fecha.getHours();
+			var minutos = fecha.getMinutes();
+
 			
-			document.getElementById("respuesta").innerHTML = fecha.getDate()+"-"+fecha.getMonth()+"-"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getSeconds() ;
+			document.getElementById("respuesta").innerHTML = fecha.getDate()+"-"+fecha.getMonth()+"-"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes() ;
 		
 		} 
 
