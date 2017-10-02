@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ej11 Tema2 Oscar</title>
+		<script type="text/javascript">
+
+		window.onload = function(){
+			var fecha = new Date();
+
+			
+			document.getElementById("respuesta").innerHTML = fecha.getDate()+"-"+fecha.getMonth()+"-"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getSeconds() ;
+		
+		} 
+
+
+		
+
+			//dd-mm-yyyy hh:mm
+		</script>
+		
+		
+	</head>
+	<body>
+	<!--
+		<form>
+			Introduex un nombre decimal<br/>
+			<select name="caras" id="carasDado"></select>
+			<input type="button" value="Tirar dado" onclick="lanzarDado();">
+
+
+		</form>
+	-->
+		<p>Fecha actual en formato dd-mm-yyyy hh:mm</p>
+
+		<p id="respuesta"></p>
+
+
+	</body>
+</html>
