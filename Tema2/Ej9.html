@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ej9 Tema2 Oscar</title>
+		<script type="text/javascript">
+		function convertir(){
+
+			var numero = document.getElementById("numero").value;
+			document.getElementById("respuesta").innerHTML = "El numero en octal es: "+convertirOctal(numero);
+			
+			//alert("hey");
+			//alert(convertirOctal(12));
+
+			
+		}
+
+
+
+		function convertirOctal(numero){
+			var resto = new Array();
+			var numeroFinal ="";
+			while (numero >= 8) {
+				resto.push(numero % 8);
+				numero = Math.floor(numero / 8);
+			}
+			var numeroFinal = ""+numero;
+			for (var i = resto.length - 1; i >= 0; i--) {
+				numeroFinal += resto[i];
+			}
+
+			return parseInt(numeroFinal);
+		}
+
+
+
+
+			
+		</script>
+		
+	</head>
+	<body>
+		<form>
+			Introduex un nombre decimal<br/>
+			<input type="text" name="numero" id="numero"  />
+			<input type="button" value="Submit" onclick="convertir();">
+
+
+		</form>
+
+		<p id="respuesta"></p>
+
+
+	</body>
+</html>
