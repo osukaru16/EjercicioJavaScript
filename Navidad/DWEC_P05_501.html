@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>DWEC_P05 Exercici 1</title>
+
+<script type="text/javascript">
+window.onload = function() {
+	//var posicion = "";
+
+	var links = document.getElementsByTagName("a");
+
+	//var posicion = nombreEnlace.split('_');
+
+	//var nombreEnlace = document.getElementsByTagName("a");
+	
+	//alert(Object.values(nombreEnlace));
+
+	var links = document.getElementsByTagName('a');
+	for( var i=0; i < links.length; i ++ ){
+ 		links[i].onclick = clickar;
+ 	}
+
+
+ 	function clickar(){
+ 		//alert(this.id);
+
+ 		var posicion = this.id.split('_');
+
+ 		//alert(posicion[1]);
+
+ 		if (document.getElementById("contenidos_"+posicion[1]).style.display !== "none") {
+			document.getElementById("contenidos_"+posicion[1]).style.display = "none";
+			this.innerHTML = 'Mostrar contenidos';
+
+			
+
+			
+		}else{
+			document.getElementById("contenidos_"+posicion[1]).style.display = "block";
+			this.innerHTML = 'Ocultar contenidos';
+
+			
+
+			
+
+		}
+
+		return false;
+
+
+
+
+
+ 	}
+
+/*
+	alert(nombreEnlace);
+
+
+	document.getElementById("enlace_"+1).onclick =  function(e) {
+		alert(this.id);
+
+		//alert("nn");
+		if (document.getElementById("contenidos_"+1).style.display !== "none") {
+			document.getElementById("contenidos_"+1).style.display = "none";
+			this.innerHTML = 'Mostrar contenidos';
+
+			
+
+			
+		}else{
+			document.getElementById("contenidos_"+1).style.display = "block";
+			this.innerHTML = 'Ocultar contenidos';
+
+			
+
+			
+
+		}
+
+		return false;
+	};
+
+*/
+/*
+	document.getElementsByTagName("a").onclick =  function(e) {
+		alert("bbb");
+		
+		alert(this.id);
+		
+		return false;
+	};*/
+
+
+
+
+}
+
+
+
+/*
+
+document.getElementById("enlace_1").onclick =  function(e) {
+
+
+	alert("nn");
+
+};*/
+
+
+
+/*
+
+function ocultar1(){
+
+
+
+	//alert("miau");
+	document.getElementById("contenidos_1").style.display = "none";
+	//this.innerHTML = 'Mostrar contenidos';
+
+
+
+};
+*/
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+
+<body>
+
+<p id="contenidos_1" style="display: block;">[1] Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+<a id="enlace_1" href="./DWEC_P05_501.html">Ocultar contenidos</a>
+
+<br>
+
+<p id="contenidos_2" style="display: block;">[2] Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+<a id="enlace_2" href="./DWEC_P05_501.html">Ocultar contenidos</a>
+
+<br>
+<p id="contenidos_3" style="display: block;">[3] Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+<a id="enlace_3" href="./DWEC_P05_501.html">Ocultar contenidos</a>
+
+
+</body></html>
