@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tema 6 Ejercicio 4</title>
+</head>
+<script type="text/javascript" src="js/js.js"></script>
+<body>
+
+
+	<form>
+		<label>Nombre</label><br/>
+		<input type="text" name="nombre" id="nombre" onchange="compruebaVacio();" /><br/>
+		<label>E-mail</label><br/>
+		<input type="text" name="email" id="email" onchange="compruebaEmail();" /><br/>
+		<label>Password</label><br/>
+		<input type="text" name="pass" id="pass" /><br/>
+		<label>Re-Password</label><br/>
+		<input type="text" name="repass" id="repass" onchange="comprobadorPass();"/><br/><br/>
+		<label>Comprobador</label><br/>
+		<!---->
+		<label>
+			<span id="numeroA"></span>+<span id="numeroB"></span>=
+		</label><br/>
+		<!---->
+
+		<!--<div id="comprobador"></div>-->
+		<input type="text" name="resultado" id="resultado" onchange="comprobarSuma();" /><br/><br/>
+		<input type="checkbox" name="aceptar" value="aceptar" id="aceptar"> Acepto las condiciones<br/><br/>
+
+		<button id="boton" disabled onclick="comprobadorTotal(); return false;">Crear cuenta</button>
+
+
+	</form>
+
+
+
+
+
+
+
+</body>
+</html>
